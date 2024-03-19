@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+    
+        html{
+            --color-primary: rgb(130, 180, 230);
+            font-family:sans-serif ;
+        }
+        div{
+            border: 2px solid plum;
+        }
+
+        /* my-tooltip{
+           border:1px solid peru;
+           padding:0.15rem;
+        } */
+
+        /* my-tooltip.important{
+            background-color:greenyellow;
+        } */
+
+
+        .highlight{
+            /* background-color: palevioletred; */
+        }
+    </style>
+    <script src="./tooltip.js"></script>
+    <script src="./confirm-link.js"></script>
+</head>
+<body>
+    <template id="tooltip-template">
+        <!-- <slot>Default slot value</slot>
+        <span>
+            {?}
+        </span> -->
+    </template>
+    <p>
+        <my-tooltip class="important" text="Web components I'm trying to set">
+            <span class="highlight"><a>Web components</a></span>
+        </my-tooltip>
+        are awesome
+    </p>
+    <!-- <div>this is not effected due to shadow dom property</div> -->
+    <my-tooltip></my-tooltip>
+    <a is="my-confirm-link" href="https://www.google.com/">Google</a>
+  
+ 
+    
+</body>
+</html>

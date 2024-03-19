@@ -1,0 +1,1 @@
+export const AV_API_KEY='WH2YUI6INO3M4WY61';
