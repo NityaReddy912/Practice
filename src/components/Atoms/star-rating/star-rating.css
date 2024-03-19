@@ -1,0 +1,10 @@
+.star{
+    color:grey;
+    cursor:pointer;
+    font-size: 25px;
+}
+
+
+.star.rated{
+    color:gold;
+}
